@@ -1,0 +1,32 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-portal
+  description: "Portal Ekibi"
+spec:
+  type: business-unit
+  profile:
+    displayName: "Portal"
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-oze
+  description: "Özel Entegratörler"
+spec:
+  type: business-unit
+  profile:
+    displayName: "ÖZE"
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-emikro
+  description: "E-Mikro"
+spec:
+  type: business-unit
+  profile:
+    displayName: "E-Mikro"
+  children: [oze,portal]

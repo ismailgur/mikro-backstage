@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Service
+metadata:
+  name: documentreports
+  description: "DocumentReports Service under Portal System"
+spec:
+  owner: team-documentreports
+  system: portal
+  partOf: portal
+  hasPart:
+    - api
+    - worker
+---
+apiVersion: backstage.io/v1alpha1
+kind: Service
+metadata:
+  name: e-document
+  description: "E-Document Service under Öze System"
+spec:
+  owner: team-document
+  system: oze
+  partOf: oze
+  hasPart:
+    - sharingapi

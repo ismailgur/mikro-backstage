@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: portal
+  description: "Portal System under Emikro Domain"
+spec:
+  owner: team-portal
+  system: emikro
+  partOf: emikro
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: oze
+  description: "Öze System under Emikro Domain"
+spec:
+  owner: team-oze
+  system: emikro
+  partOf: emikro
